@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Items</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="./pics/Capture-removebg-preview (2).png" alt="">
+        </div>
+        <div class="searchbar">
+            <input type="search" placeholder="search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="login">
+            <a href="">Login/Signup</a>
+        </div>
+        <div class="bag">
+            <a href=""> <i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </div>
+
+    <div class="navbar1">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li><a href="Grocery.html">Grocery</a> </li>
+            <li><a href="Fruits.html">Fruits</a> </li>
+            <li><a href="Electronic.html">Kitchen Appliences</a> </li>
+            <li><a href="sationary.html">Sationary</a> </li>
+            <li><a href="Frozenfood.html">Beverages & Frozen food</a> </li>
+            <li><a href="Contact.html">Contact</a> </li>
+        </ul>
+    </div>
+
+    <div class="bannerimg1">
+        <img src="./pics/images ban.jpg" width="80%" alt="">
+    </div>
+    <h2 class="title">Grocery In Galaxy Mart</h2>
+
+
+    <section class="row m-0 d-flex justify-content-around">
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 32.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Basmati Rice</h5>
+                <h6>10 Kilogram</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,500 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 32.jpg'  , 'Basmati Rice')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 2.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Smart Balance Yougrt</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 350 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 2.jpg'  , 'Smart Balance Yougrt')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 1.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Lay's</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 50 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 1.jpg'  , 'Lays')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 3.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Corn Flakes</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 799 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 3.jpg'  , 'Corn Flakes')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 4.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Fortune Besan</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 200 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 4.jpg'  , 'Fortune Besan')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 5.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Kisses Mikl Chocalate</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,000 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 5.jpg'  , 'Kisses Mikl Chocalate')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 6.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Heinz Ketchup</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 650 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 6.jpg'  , 'Heinz Ketchup')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 7.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Hot Honey</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,500 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 7.jpg'  , 'Hot Honey')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 8.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Bektooli Organic</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 150 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 8.jpg'  , 'Bektooli Organic')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 9.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Cardinis</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,500 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 9.jpg'  , 'Cardinis')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 10.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Chopstick</h5>
+                <h6>Per Packet</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 2,000 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 10.jpg'  , 'Chopstick')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 11.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Sajeeb Noodles</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,500 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 11.jpg'  , 'Sajeeb Noodles')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 12.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Doodles</h5>
+                <h6>4 piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,500 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 12.jpg'  , 'Doodles')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 13.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Oreo</h5>
+                <h6>Pack of 3</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 90 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 13.jpg'  , 'Oreo')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 14.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Oreo Pack</h5>
+                <h6>Pack of 20</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 999 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 14.jpg'  , 'Oreo Pack')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 15.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Mistry Pack</h5>
+                <h6>Pack Of 50</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,999 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 15.jpg'  , 'Mistry Pack')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 16.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">MilkPak Milk</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 200 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 16.jpg'  , 'MilkPak Milk')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 17.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Olpers Milk</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 180 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 17.jpg'  , 'Olpers Milk')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 18.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Tarang Milk</h5>
+                <h6>Pack Of 24</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,500 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 18.jpg'  , 'Tarang Milk')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 19.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Eggs</h5>
+                <h6>12 piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 220 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 19.jpg'  , 'Eggs')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 20.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Desi Eggs</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 300 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 20.jpg'  , 'Desi Eggs')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 21.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Habib Cooking Oil</h5>
+                <h6>5 Liter </h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,500 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 21.jpg'  , 'Habib Cooking Oil')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 22.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Dalda Oil</h5>
+                <h6>1 Liter</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 500 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 22.jpg'  , 'Dalda Oil')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 23.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Pappad</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 300 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 23.jpg'  , 'Pappad')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 24.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Skippy Creamy</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 600 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 24.jpg'  , 'Skippy Creamy')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 25.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Brown Sugar</h5>
+                <h6>5 kg</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,000 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 25.jpg'  , 'Brown Sugar')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 26.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Alosra</h5>
+                <h6>1kg</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs  899 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 26.jpg'  , 'Alosra')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 27.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Tomato Ketch</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,200 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 27.jpg'  , 'Tomato Ketch')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 28.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Haeyo Mayo</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 260 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 28.jpg'  , 'Haeyo Mayo')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 29.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">MilkPak Cream</h5>
+                <h6>1 kg</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 360 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 29.jpg'  , 'MilkPak Cream')" data-target="#productModal">Buy</button>
+            </div>
+        </div><div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/grocery item 30.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Tapal Family Mixture</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 750 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/grocery item 30.jpg'  , 'Tapal Family Mixture')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/23.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Weat Flour</h5>
+                <h6>Per piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,000 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/23.jpg'  , 'Weat Flour')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        
+        </section>
+
+
+
+        <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog myModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Product Detail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <section class="row m-0">
+                        <div class="col-sm-6 col-md-6">
+                            <img id="modalImg" src="https://images.unsplash.com/photo-1580881647059-923632b8fd75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BvcnQlMjBjYXJ8ZW58MHx8MHx8&w=1000&q=80" width="100%" height="300" alt="">
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <h1 id="modalProductName">CAR NAME</h1>
+                            <p id="modalProductDetails">we have good quality products here and we have special QR code on to check product quality on product offical website.</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+
+</html>

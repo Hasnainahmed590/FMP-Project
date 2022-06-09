@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frozen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="./pics/Capture-removebg-preview (2).png" alt="">
+        </div>
+        <div class="searchbar">
+            <input type="search" placeholder="search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="login">
+            <a href="">Login/Signup</a>
+        </div>
+        <div class="bag">
+            <a href=""> <i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </div>
+
+    <div class="navbar1">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li><a href="Grocery.html">Grocery</a> </li>
+            <li><a href="Fruits.html">Fruits</a> </li>
+            <li><a href="Electronic.html">Kitchen Appliences</a> </li>
+            <li><a href="sationary.html">Sationary</a> </li>
+            <li><a href="Frozenfood.html">Beverages & Frozen food</a> </li>
+            <li><a href="Contact.html">Contact</a> </li>
+        </ul>
+    </div>
+
+    <div class="bannerimg1">
+        <img src="./pics/fro banner.jpg" width="60%" alt="">
+    </div>
+    <h2 class="title">Beverages & Frozen food </h2>
+
+
+    <section class="row m-0 d-flex justify-content-around">
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 32.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Mutton Mince</h5>
+                <h6>Per Kg</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 800 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 32.jpg'  , 'Mutton Mince')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 1.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">FlatBread Melt</h5>
+                <h6>Per Pack</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 760 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 1.jpg'  , 'FlatBread Melt')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 2.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Hot Pockets</h5>
+                <h6>Per Pack</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 960 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 2.jpg'  , 'Hot Pockets')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 33.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Goat Liver</h5>
+                <h6>Per kg</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 600 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 33.jpg'  , 'Goat Liver')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 18.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">opa</h5>
+                <h6>Per Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 300 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 18.jpg'  , 'opa')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 3.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Meatless Lasagena</h5>
+                <h6>Per pack</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 300 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 3.jpg'  , 'Meatless Lasagena')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 4.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Fina Pizza</h5>
+                <h6>Per Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 620 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 4.jpg'  , 'Fina Pizza')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 5.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">lean Cusine</h5>
+                <h6>Per pack</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 800 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 5.jpg'  , 'lean Cusine')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 6.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Geber</h5>
+                <h6>Per Packert</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 200 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 6.jpg'  , 'Geber')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 7.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Dibs</h5>
+                <h6>Per Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 250 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 7.jpg'  , 'Dibs')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 9.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Seekh kabab</h5>
+                <h6>6 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 400 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 9.jpg'  , 'Seekh kabab')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 8.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Plain Pharata</h5>
+                <h6>Per Pack</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 680 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 8.jpg'  , 'Plain Pharata')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 10.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Beaf Kabab</h5>
+                <h6>Per Pack</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 710 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 10.jpg'  , 'Beaf Kabab')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 11.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">chocholate ice cream</h5>
+                <h6>Per Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 600 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 11.jpg'  , 'chocholate ice cream')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 13.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">chicken chease nugets </h5>
+                <h6>6 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 400 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 13.jpg'  , 'chicken chease nugets ')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 14.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Spring Roll</h5>
+                <h6>Per Bundle</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 500 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 14.jpg'  , 'Spring Roll')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 12.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Kachelo Geleto</h5>
+                <h6>6 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 560 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 12.jpg'  , 'Kachelo Geleto')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 15.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Vegetable Samosa</h5>
+                <h6>3 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 430 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 15.jpg'  , 'Vegetable Samosa')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 16.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Zehat Alber</h5>
+                <h6>6 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 150 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 16.jpg'  , 'Zehat Alber')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 20.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Taters</h5>
+                <h6>24 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 450 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 20.jpg'  , 'Taters')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 21.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Siblou White Fish</h5>
+                <h6>Pack</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 890 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 21.jpg'  , 'Siblou White Fish')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 22.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Siblou Crispy Fish Fillets</h5>
+                <h6>80 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,800 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 22.jpg'  , 'Siblou Crispy Fish Fillets')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 23.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Siblou Breaded Fish Fillets</h5>
+                <h6>6 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,325 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 23.jpg'  , 'Siblou Breaded Fish Fillets')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 24.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">MonSalwa Breaded Fish Fillets</h5>
+                <h6>6 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 650 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 24.jpg'  , 'MonSalwa Breaded Fish Fillets')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 25.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Menu Tempura Fish Fillet </h5>
+                <h6>6 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 850 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 25.jpg'  , 'Menu Tempura Fish Fillet')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 26.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">BoneLess Chicken </h5>
+                <h6>3 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 450 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 26.jpg'  , 'BoneLess Chicken')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 27.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Chicken Leg Piece </h5>
+                <h6>2 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 250 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 27.jpg'  , 'Chicken Leg Piece')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 28.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Hole Chicken </h5>
+                <h6>1 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 650 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 28.jpg'  , 'Hole Chicken')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 29.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Beaf Boneless  </h5>
+                <h6>3 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 1,000 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 29.jpg'  , 'Beaf Boneless ')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 30.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Beaf Brain</h5>
+                <h6>6 Piece</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 850 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 30.jpg'  , 'Beaf Brain')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+        <div class="card mb-2" style="width: 20rem;">
+            <img src="./pics/fro items 31.jpg" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title">Cow Meat</h5>
+                <h6>1 kilogram</h6>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 950 </p>
+                <button class="btn btn-primary" data-toggle="modal" onclick="openModal('./pics/fro items 31.jpg'  , 'Cow Meat')" data-target="#productModal">Buy</button>
+            </div>
+        </div>
+
+
+        </section>
+
+
+
+
+
+
+
+     <!-- Modal -->
+ <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog myModal">
+     <div class="modal-content">
+        <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel">Product Detail</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+        </button>
+          </div>
+          <div class="modal-body">
+             <section class="row m-0">
+                <div class="col-sm-6 col-md-6">
+                   <img id="modalImg" src="https://images.unsplash.com/photo-1580881647059-923632b8fd75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BvcnQlMjBjYXJ8ZW58MHx8MHx8&w=1000&q=80" width="100%" height="300" alt="">
+                </div>
+                 <div class="col-sm-6 col-md-6">
+                     <h1 id="modalProductName">CAR NAME</h1>
+                     <p id="modalProductDetails">we have good quality products here and we have special QR code on to check product quality on product offical website.</p>
+                </div>
+             </section>
+        </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+         </div>
+     </div>
+   </div>
+</div>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</html>
